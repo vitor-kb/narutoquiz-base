@@ -4,6 +4,7 @@ import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import QuizBackground from '../src/components/QuizBackground'
+import QuizLogo from '../src/components/QuizLogo'
 
   // const BackgroundImage = styled.div` //outro jeito de usar uma function
   // background-image: url(${db.bg});
@@ -27,20 +28,21 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo/>
         <Widget>
           <Widget.Header>
             <h1>Naruto</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Quiz sobre Naruto</p>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da galera</h1>
+            <h1>Quizes do pessoal</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Em breve..</p>
           </Widget.Content>
         </Widget>
         <Footer/>
