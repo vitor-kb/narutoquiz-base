@@ -1,0 +1,20 @@
+{
+"bg": "https://wallpaperaccess.com/full/1250843.png",
+  "title": "Quiz Naruto com React Next.js",
+  "description": "Teste seus conhecimentos sobre Naruto",
+  "questions": [
+  ],
+  "external": [
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#ff5722",
+      "secondary": "#a13800",
+      "mainBg": "#171B35",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}
