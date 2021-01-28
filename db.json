@@ -3,6 +3,66 @@
   "title": "Quiz Naruto com React Next.js",
   "description": "Teste seus conhecimentos sobre Naruto",
   "questions": [
+    {
+      "image": "https://media3.giphy.com/media/QgJHDZzJzi4I8/giphy.gif",
+      "title": "Em que ano o ANIME de Naruto estreou no Japão?",
+      "description": "Essa é de boa!",
+      "answer": 2,
+      "alternatives": [
+        "2005",
+        "2002",
+        "2003",
+        "2004"
+      ]
+    },
+    {
+      "image": "https://cutewallpaper.org/21/tenseigan-vs-rinnegan/Eyes-naruto-Kekkei-Genkai-Kekkei-genkai,-Tokyo-ghoul-.jpg",
+      "title": "Qual o doujutsu(Jutsu visual) que Toneri Otsutsuki conseguiu no filme The Last?",
+      "description": "Esse só acerta quem viu o filme hahaha",
+      "answer": 4,
+      "alternatives": [
+         "Byakugan",
+         "Sharingan",
+         "Jogan",
+         "Tenseigan"
+      ]
+    },
+    {
+      "image": "https://media3.giphy.com/media/mu7RhFWLcfj9u/200w.webp?cid=ecf05e47iiebh0rzn9d0a6vauw92blxaqiqnwztlf2d4ec33&rid=200w.webp",
+      "title": "Qual foi o primeiro jutsu que naruto aprendeu?",
+      "description": "Esse vai gerar umas dúvidas",
+      "answer": 3,
+      "alternatives": [
+        "Rasengan",
+        "Clone das sombras",
+        "Jutsu Sexy",
+        "Multi clone das sombras"
+      ]
+    },
+    {
+      "image": "https://www.einerd.com.br/wp-content/uploads/2020/07/Hokage-Naruto.jpg",
+      "title": "Quem foi o primeiro Hokage da Vila da Folha?",
+      "description": "Narutinho é o sétimo dos hokages",
+      "answer": 4,
+      "alternatives": [
+        "Tsunade",
+        "Minato Namikaze",
+        "Tobirama Senju",
+        "Hashirama Senju"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/w7CP59oLYw6PK/200w.webp?cid=ecf05e47tl1h8qufpxgxbwuvk6i1xj3y8xtuiqhc76p85sir&rid=200w.webp",
+      "title": "Quais as comidas favoritas do Naruto?",
+      "description": "Narutinho era esfomeado",
+      "answer": 4,
+      "alternatives": [
+        "Yakisoba e Bolinho de arroz",
+        "Ramen Ichiraku e Sopa de feijão",
+        "Arroz e feijão",
+        "Rolinho primavera e Sushi"
+      ]
+    }
   ],
   "external": [
   ],
@@ -10,10 +70,12 @@
     "colors": {
       "primary": "#ff5722",
       "secondary": "#a13800",
-      "mainBg": "#171B35",
+      "tertiary": "#00000",
+      "mainBg": "#a13800",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "success": "#4CAF50",
+      "selos":"https://2.bp.blogspot.com/-rF0MEPioyqY/WBUyt-skKGI/AAAAAAAAAT0/23CXwzolCnQAKkyGHWhR-b1SViRNJkckQCLcB/s280/Selos.jpg"
     },
     "borderRadius": "4px"
   }
