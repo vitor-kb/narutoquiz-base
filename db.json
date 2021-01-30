@@ -7,7 +7,7 @@
       "image": "https://media3.giphy.com/media/QgJHDZzJzi4I8/giphy.gif",
       "title": "Em que ano o ANIME de Naruto estreou no Japão?",
       "description": "Essa é de boa!",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
         "2005",
         "2002",
@@ -19,7 +19,7 @@
       "image": "https://cutewallpaper.org/21/tenseigan-vs-rinnegan/Eyes-naruto-Kekkei-Genkai-Kekkei-genkai,-Tokyo-ghoul-.jpg",
       "title": "Qual o doujutsu(Jutsu visual) que Toneri Otsutsuki conseguiu no filme The Last?",
       "description": "Esse só acerta quem viu o filme hahaha",
-      "answer": 4,
+      "answer": 3,
       "alternatives": [
          "Byakugan",
          "Sharingan",
@@ -31,7 +31,7 @@
       "image": "https://media3.giphy.com/media/mu7RhFWLcfj9u/200w.webp?cid=ecf05e47iiebh0rzn9d0a6vauw92blxaqiqnwztlf2d4ec33&rid=200w.webp",
       "title": "Qual foi o primeiro jutsu que naruto aprendeu?",
       "description": "Esse vai gerar umas dúvidas",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
         "Rasengan",
         "Clone das sombras",
@@ -43,7 +43,7 @@
       "image": "https://www.einerd.com.br/wp-content/uploads/2020/07/Hokage-Naruto.jpg",
       "title": "Quem foi o primeiro Hokage da Vila da Folha?",
       "description": "Narutinho é o sétimo dos hokages",
-      "answer": 4,
+      "answer": 3,
       "alternatives": [
         "Tsunade",
         "Minato Namikaze",
@@ -55,12 +55,71 @@
       "image": "https://media4.giphy.com/media/w7CP59oLYw6PK/200w.webp?cid=ecf05e47tl1h8qufpxgxbwuvk6i1xj3y8xtuiqhc76p85sir&rid=200w.webp",
       "title": "Quais as comidas favoritas do Naruto?",
       "description": "Narutinho era esfomeado",
-      "answer": 4,
+      "answer": 1,
       "alternatives": [
         "Yakisoba e Bolinho de arroz",
         "Ramen Ichiraku e Sopa de feijão",
         "Arroz e feijão",
         "Rolinho primavera e Sushi"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/Q1IbBGujN6p2w/giphy.gif?cid=ecf05e471cq6cd1nl275b64z3njflqu6ksgd8ddrzukika59&rid=giphy.gif",
+      "title": "Quem sempre gostou do Naruto desde o clássico?",
+      "description": "Essa é fácil",
+      "answer": 3,
+      "alternatives": [
+        "Sakura",
+        "Ino",
+        "Konan",
+        "Hinata"
+      ]
+    },
+    {
+      "image": "https://media1.giphy.com/media/xULW8yBwqiOeLwSwY8/giphy.gif?cid=ecf05e47feugzlacztppk04mbzmnpdzp7arfv03gqwj9bqjs&rid=giphy.gif",
+      "title": "Qual o real nome da Raposa de Nove Caudas?",
+      "description": "O Naruto começou a falar esse nome mais pro final do Shippuden",
+      "answer": 0,
+      "alternatives": [
+        "Kurama",
+        "Shukaku",
+        "Gyūki",
+        "Isobu"
+      ]
+    },
+    {
+      "image": "https://media3.giphy.com/media/APYxbo6wMV5WE/200w.webp?cid=ecf05e47twjoqplrkdzji1qtu4blc1i0hexpz44cit5cbno9&rid=200w.webp",
+      "title": "Quem é o melhor amigo e rival de Naruto?",
+      "description": "Narutinho fez muitos amigos ao longo de sua jornada",
+      "answer": 1,
+      "alternatives": [
+        "Neji Hyuga",
+        "Sasuke Uchiha",
+        "Shikamaru Nara",
+        "Choji Akimichi"
+      ]
+    },
+    {
+      "image": "https://media4.giphy.com/media/TbWQoPQOxwBpe/100.webp?cid=ecf05e47129julvppmsmatyxez5q7r9dnp16hge6f0rppkgn&rid=100.webp",
+      "title": "Aproveitando a pessoa da questão anterior, qual o Jutsu mais forte dele?",
+      "description": "Não é tão simples",
+      "answer": 3,
+      "alternatives": [
+        "Chidori",
+        "Susanoo",
+        "Bola de fogo",
+        "Flecha de Indra"
+      ]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/EXFSjNqU8AEjoMV.jpg",
+      "title": "Qual o nome da filha de Naruto?",
+      "description": "Muito fofa",
+      "answer": 0,
+      "alternatives": [
+        "Himawari",
+        "Sarada",
+        "ChoCho"
       ]
     }
   ],
@@ -71,9 +130,10 @@
       "primary": "#ff5722",
       "secondary": "#a13800",
       "tertiary": "#00000",
+      "quart": "#FFFF00",
       "mainBg": "#a13800",
       "contrastText": "#FFFFFF",
-      "wrong": "#FF5722",
+      "wrong": "#FF0000",
       "success": "#4CAF50",
       "selos":"https://2.bp.blogspot.com/-rF0MEPioyqY/WBUyt-skKGI/AAAAAAAAAT0/23CXwzolCnQAKkyGHWhR-b1SViRNJkckQCLcB/s280/Selos.jpg"
     },

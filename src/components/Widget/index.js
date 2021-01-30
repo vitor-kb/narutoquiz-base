@@ -51,7 +51,7 @@ Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  background-color: ${({ theme }) => `${theme.colors.quart}40`};
   font-weight: bold;
   padding: 10px 15px;
   margin-bottom: 8px;
@@ -60,7 +60,7 @@ Widget.Topic = styled.a`
   transition: .3s;
   display: block;
 
-  &::hover,
+  &:hover,
   &:focus {
     opacity: .5;
   }
