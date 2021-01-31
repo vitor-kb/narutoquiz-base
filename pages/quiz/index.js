@@ -55,7 +55,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        {db.theme.selos.selos1}
+        Fazendo os selos
       </Widget.Content>
     </Widget>
   );
