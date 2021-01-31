@@ -124,6 +124,9 @@
     }
   ],
   "external": [
+    "https://brunoquiz.brunosaibert.vercel.app/",
+    "https://cakuiz.pmdpaula.vercel.app/",
+    "https://amaterasu.graxz.vercel.app/"
   ],
   "theme": {
     "colors": {
@@ -134,8 +137,7 @@
       "mainBg": "#a13800",
       "contrastText": "#FFFFFF",
       "wrong": "#FF0000",
-      "success": "#4CAF50",
-      "selos":"https://2.bp.blogspot.com/-rF0MEPioyqY/WBUyt-skKGI/AAAAAAAAAT0/23CXwzolCnQAKkyGHWhR-b1SViRNJkckQCLcB/s280/Selos.jpg"
+      "success": "#4CAF50"
     },
     "borderRadius": "4px"
   }

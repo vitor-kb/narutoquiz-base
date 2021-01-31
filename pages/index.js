@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
+import Link from '../src/components/Link';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
@@ -37,23 +39,51 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Quiz Naruto</title>
+        <title>{db.title}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <meta name="title" content={db.title} />
+        <meta name="description" content={db.description} />
+
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Naruto Quiz" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://narutoquiz-base.vitor-kb.vercel.app/" />
+        <meta property="og:title" content={db.title} />
+        <meta property="og:description" content={db.description} />
+        <meta property="og:image" content={db.bg} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://narutoquiz-base.vitor-kb.vercel.app/" />
+        <meta property="twitter:title" content={db.title} />
+        <meta property="twitter:description" content={db.description} />
+        <meta property="twitter:image" content={db.bg} />
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Naruto</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Teste seus conhecimentos sobre o universo de Naruto!</p>
+            <p>{db.description}</p>
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              // eslint-disable-next-line no-console
-              console.log('Fazendo uma submissão por meio do react');
-
-              // router manda para a próxima página
+              // console.log('Fazendo uma submissão por meio do react');
             }}
             >
               <Input
@@ -62,21 +92,65 @@ export default function Home() {
                 placeholder="Digite seu nome pra começar :)"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
+              <Button
+                as={motion.button}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                type="submit"
+                disabled={name.length === 0}
+              >
                 {`Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
-            <h1>Quizes do pessoal</h1>
+            <h1>Quizes da Galera</h1>
 
-            <p>Em breve..</p>
+            <ul>
+
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                    >
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 1, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/vitor-kb" />
     </QuizBackground>
